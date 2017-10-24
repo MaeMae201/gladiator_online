@@ -43,7 +43,7 @@ function Gladiator(name, health, rage, damage_high, damage_low) {
     };
 
     gladiator.heal = function heal() {
-        if (gladiator.health >= 200) {
+        if (gladiator.health >= 100) {
             console.log('\nCan not heal over 100 health!\n');
         } else {
             console.log('\n');
@@ -51,7 +51,7 @@ function Gladiator(name, health, rage, damage_high, damage_low) {
                 console.log('\nYou do not have enough Rage to heal.\n');
             } else {
                 gladiator.rage = gladiator.rage - 10;
-                gladiator.health = Math.min(200, gladiator.health + 20);
+                gladiator.health = Math.min(100, gladiator.health + 20);
             }
         }
     };
