@@ -1,24 +1,23 @@
-var my = require('my');
+function signUp() {
+    $.post(
+        'https://bcca-chirper.herokuapp.com/api/signup/',
+        JSON.stringify({
+            name: $('#name').val(),
+            username: $('#username').val(),
+            email: $('#email').val(),
+            password: $('#pwd').val()
+        })
+    )
+        .then(function handleFeedResponse(response) {
+            window.location.replace(
+                'index.html?username=' + $('#username').val()
+            );
+        })
+        .catch(function handleFeedError(response) {
+            console.log(response);
+        });
+}
 
-var connection = my.createConnection({
-    host: 'localhost',
-    user: '',
-    password: '',
-    database: 'copedb'
-});
-connection.connect();
-var cope = {
-    author: 'XYZXYZ',
-    title: 'Testing Node',
-    body: 'Node JS'
-};
-var query = connection.query('insert into cope set ?', cope, function(
-    err,
-    result
-) {
-    if (err) {
-        console.error(err);
-        return;
-    }
-    console.error(result);
-});
+function main() {
+    var username = getParameterByName('username');
+}

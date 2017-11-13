@@ -125,11 +125,11 @@ var PAGE_DATA = {
     ]
 };
 
-function showProfilePic() {
-    var user = PAGE_DATA.user;
-    var html = '<img id="profile_img" src="' + user.profile_pic + '">';
-    $('.follow_blank').append(html);
-}
+// function showProfilePic() {
+//     var user = PAGE_DATA.user;
+//     var html = '<img id="profile_img" src="' + user.profile_pic + '">';
+//     $('.follow_blank').append(html);
+// }
 
 function personalData() {
     var html = '<h2>' + PAGE_DATA.user.name + '</h2>';
@@ -200,9 +200,7 @@ function showSuggestions(suggest) {
 
 $('#post-chirp').on('submit', function(event) {
     event.preventDefault();
-    // get the data from the textarea
-    // insert it into the chirp data
-    // clear the text area
+
     function myFunction() {
         var x = document.getElementById('Textarea').value;
         document.getElementById('chirp-message').innerHTML = x;
@@ -212,7 +210,6 @@ $('#post-chirp').on('submit', function(event) {
 });
 
 function main() {
-    showProfilePic();
     personalData();
     showchirps();
     showSuggestions();
