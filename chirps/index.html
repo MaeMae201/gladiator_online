@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chirper - Loading</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/653a819f89.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Righteous" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="menu">
+            <a href="https://twitter.com/raymondh" onclick="document.location.reload()">
+                <i class="fa fa-twitter" aria-hidden="true"></i> Home</a>
+            <a href="https://twitter.com/i/moments">
+                <i class="fa fa-bolt" aria-hidden="true"></i> Moments</a>
+            <span>
+                <input type="text" class="search rounded" href="google.com" action="google.com" placeholder="Search...">&nbsp;&nbsp;</span>
+            <i class="fa fa-search" aria-hidden="true"></i>
+
+        </div>
+        <div class="blank"></div>
+        <div class="follow_blank">
+            <a href="https://twitter.com/who_to_follow/suggestions">Follow</a>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div id="personal-data">Personal data...</div>
+                </div>
+                <div class="col-lg-6">
+                    <form id="post-chirp">
+                        <div class="form-group">
+                            <label for="exampleTextarea">Chirp</label>
+                            <textarea class="form-control" id="chirp-message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Post</button>
+                    </form>
+                    <div id="chirps">
+                        <div class="menu2">
+                            <a href="blank">Tweets</a>
+                            <a href="https://twitter.com/raymondh/with_replies">Tweets & Replies</a>
+                            <a href="https://twitter.com/raymondh/media"> Media</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="friends">
+                        <h4>You may also like...</h4>
+                        <div id="friends">
+                            <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="blank2"></div>
+    </div>
+    <script src="index.js"></script>
+
+</body>
+
+<div class="row">
+
+    <div class="col-lg-6" id="chirps">Chirps...</div>
+    <script>
+        // document.bgcolor("chirps").style.color = "blue";
+        document.getElementById("chirps").style.fontFamily = "Courier";
+        document.getElementById("chirps").style.fontSize = "larger";
+        document.getElementById("chirps").style.color = "maroon";
+    </script>
+    <div class="col-lg-3" id="friend">Friends...</div>
+    <script>
+        // document.bgcolor("friend").style.color = "blue";
+        document.getElementById("friend").style.fontFamily = "Courier";
+        document.getElementById("friend").style.fontSize = "larger";
+        document.getElementById("friend").style.color = "maroon";
+    </script>
+</div>
+</div>
+<div class="home-page-tweet-box" id="homepage">
+    <script src="index.js"></script>
+    </body>
+
+</html>

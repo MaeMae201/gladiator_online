@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+        <div class="col-lg-7" id="h3">
+            <h1>Log In With Chirper!</h1>
+            <script>
+                document.getElementById("h3").style.fontStyle = 'italic'
+                document.getElementById("h3").style.fontFamily = "Georgia";
+                document.getElementById("h3").style.fontSize = "larger";
+                document.getElementById("h3").style.color = "blue";
+            </script>
+        </div>
+        <div class="b">
+            <div class="col-lg-5" id="b">
+                <script>
+                    document.getElementById("b").style.fontStyle = 'italic'
+                    document.getElementById("b").style.fontFamily = "Georgia";
+                    document.getElementById("b").style.fontSize = "larger";
+                    document.getElementById("b").style.color = "black";
+                </script>
+                <form action="post" method="POST" enctype="multipart/form-data">
+                    <center>
+                        <input type="hidden" name="action" placeholder="Enter Name" /> Username:
+                        <br />
+                        <input name="name" type="text" placeholder="Enter Name" size="40" />
+                        <br /> Password:
+                        <br />
+                        <input name="secret" type="password" placeholder="Enter Password" maxlength="12" size="40" />
+                        <br />
+                        <input type="button" value="Log In" />
+                    </center>
+            </div>
+            </form>
+</body>
+
+</html>

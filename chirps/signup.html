@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <link href="style.css" rel="stylesheet">
+</head>
+<div class="body">
+
+    <body>
+        <center>
+            <div class="h1">
+                <div class="col-lg-6" id="h1">
+                    <h1>Sign Up With Chirper!</h1>
+                </div>
+
+                <script>
+                    document.getElementById("h1").style.fontStyle = 'italic'
+                    document.getElementById("h1").style.fontFamily = "Georgia";
+                    document.getElementById("h1").style.fontSize = "larger";
+                    document.getElementById("h1").style.color = "blue";
+                </script>
+            </div>
+        </center>
+        <div class="h2">
+            <div class="col-lg-5" id="h2">
+                <script>
+                    document.getElementById("h2").style.fontStyle = 'italic'
+                    document.getElementById("h2").style.fontFamily = "Georgia";
+                    document.getElementById("h2").style.fontSize = "larger";
+                    document.getElementById("h2").style.color = "black";
+                </script>
+                <form action="post" method="POST" enctype="multipart/form-data">
+                    <center>
+                        <input type="hidden" name="action" placeholder="Enter Name" /> Name:
+                        <br />
+                        <input name="name" type="text" placeholder="Enter Name" size="40" />
+                        <br /> Username:
+                        <br />
+                        <input name="name" type="text" placeholder="Enter Username" size="40" />
+                        <br /> Email:
+                        <br />
+                        <input name="email" type="text" placeholder="Enter Email" size="40" />
+                        <br /> Password:
+                        <br />
+                        <input name="secret" type="password" placeholder="Enter Password" maxlength="12" size="40" />
+                        <br />
+                        <input type="submit" value="Sign Up" href="index.html" size="30" />
+                        <!-- <input type="submit" value="Log in" size="30"> -->
+                        <a href="file:///home/basecamp/Projects/DailyExercises/October/chirper-feed/login.html">
+                            <input type="button" value="Log In" />
+                        </a>
+                    </center>
+            </div>
+            </form>
+            <script src="signup.js"></script>
+        </div>
+    </body>
+
+</html>
