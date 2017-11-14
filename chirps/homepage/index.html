@@ -7,36 +7,27 @@
 
 <body>
     <div class="logout">
-        <a href="login.html">Logout</a>
+        <a href="signup.html">Logout</a>
     </div>
     <div id="app">
         <div class="menu">
             <i class="fa fa-twitter" aria-hidden="true"></i> Home</a>
-            <a href="https://twitter.com/i/moments">
-                <i class="fa fa-bolt" aria-hidden="true"></i> Moments</a>
+            <div class="moment">
+                <a href="https://twitter.com/i/moments">
+                    <i class="fa fa-bolt" aria-hidden="true"></i> Moments</a>
+            </div>
             <div class="follow_blank">
-                <a href="https://twitter.com/who_to_follow/suggestions">Follow</a>
+                <a href="https://twitter.com/who_to_follow/suggestions"> Follow</a>
             </div>
         </div>
-        <div class="col-lg-6">
-            <form id="post-chirp">
-                <label for="exampleTextarea">Chirp</label>
-                <textarea class="form-control" id="chirp-message" rows="3"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Post</button>
+        <center>
+            <div class="col-lg-6">
+                <form id="post-chirp">
+                    <textarea class="form-control" id="chirp-message" rows="2"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Post</button>
+        </center>
         </form>
-        <div id="chirps">
-
-            <div class="menu2">
-                <a href="blank">Tweets</a>
-
-                <a href="blank">Tweets & Replies</a>
-
-                <a href="blank"> Media</a>
-            </div>
-
-        </div>
-
     </div>
     </div>
     <div class="row">
@@ -45,12 +36,7 @@
         <script>
             document.getElementById("chirps").style.fontFamily = "Courier";
             document.getElementById("chirps").style.fontSize = "larger";
-            document.getElementById("chirps").style.color = "maroon";
-        </script>
-        <script>
-            document.getElementById("friend").style.fontFamily = "Courier";
-            document.getElementById("friend").style.fontSize = "larger";
-            document.getElementById("friend").style.color = "maroon";
+            document.getElementById("chirps").style.color = "blue";
         </script>
     </div>
     </div>

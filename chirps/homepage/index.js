@@ -14,21 +14,6 @@ $('#user-search').on('submit', function search(event) {
         });
 });
 
-function showArticle(article) {
-    return (
-        '<hr><img src="' +
-        article.urlToImage +
-        '" class="trendingimg">' +
-        '<span class="authorName"><br>' +
-        article.author +
-        '</span><a href="' +
-        article.url +
-        '"><h6> Title: ' +
-        article.title +
-        '</h6></a><p>' +
-        article.description +
-        '</p>'
-    );
 }
 
 function updateArticleView() {
@@ -55,3 +40,5 @@ function logout() {
 }
 
 $(main);
+logout();
+main();
