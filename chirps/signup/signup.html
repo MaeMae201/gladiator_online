@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' href='style.css' />
+    <title>Signup</title>
+</head>
+
+<body>
+    <div class="twitter">
+        <center>
+            <img src="Photos/twitter.jpg" alt="Chirp With Us!" width="500" height="500">
+        </center>
+    </div>
+    <div id="topbar" class="col-lg-12">
+        <div class=".dropdown">
+            <a hred="index.html" id="login">Log In</a>
+            <i class="fa fa-caret-down"></i>
+
+        </div>
+    </div>
+    <center>
+        <div class="dropdown-content" id="drop-down" hidden>
+            <script>
+                document.getElementById("drop-down").style.backgroundColor = "grey";
+                document.getElementById("drop-down").style.fontFamily = "Courier new";
+                document.getElementById("drop-down").style.fontSize = "larger";
+                document.getElementById("drop-down").style.color = "white";
+            </script>
+            <p id="drop">Already have an account?</p>
+            <p id="drop">
+                <input id="username-info2" type="text" placeholder="Username" />
+            </p>
+            <p id="drop">
+                <input id="password-info2" type="password" placeholder="Password" />
+            </p>
+            <br>
+            <p id="drop">
+                <a href="index.html">Login</a>
+            </p>
+            <ul id="login-error"></ul>
+        </div>
+    </center>
+    <center>
+        <div id="container">
+            <script>
+                document.getElementById("container").style.backgroundColor = "grey";
+                document.getElementById("container").style.fontFamily = "Courier new";
+                document.getElementById("container").style.fontSize = "larger";
+                document.getElementById("container").style.color = "white";
+            </script>
+            <i id="bird2" class="fa fa-twitter" aria-hidden="true"></i>
+            <h1>Sign Up With Chirper Today</h1>
+            <div id="user-info">
+                <input id="name-input" size="20" type="text" autocomplete="off" value="" name="user[name]" maxlength="40" aria-required="true"
+                    placeholder="Full name" class="">
+                <br>
+                <br>
+                <input id="username-input" size="20" type="text" autocomplete="off" value="" name="user[name]" maxlength="40" aria-required="true"
+                    placeholder="Username" class="">
+                <p id="username-error"></p>
+                <input id="email-input" size="20" type="text" autocomplete="off" value="" name="user[name]" maxlength="40" aria-required="true"
+                    placeholder="Email" class="">
+                <br>
+                <br>
+                <input name="secret" type="password" placeholder="Password" maxlength="40" size="20" aria-required="true" />
+                <p id="password-errors"></p>
+                <a href="signup.html">Sign up</a>
+            </div>
+        </div>
+    </center>
+
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="signup.js"></script>
+</body>
+
+</html>
