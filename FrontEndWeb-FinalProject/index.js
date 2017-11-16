@@ -1,7 +1,6 @@
 var myINV = {
     'Nike Shoes': '$70.00',
-    'Nike Shorts': '$45.00',
-    'Nike Socks': '$10.00',
+    'Nike Socks': '$20.00',
     'Nike Workout Shirts': '$30.00',
     'Nike Workout Shorts': '$40.00'
 };
