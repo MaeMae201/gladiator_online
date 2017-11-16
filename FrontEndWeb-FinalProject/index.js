@@ -5,13 +5,16 @@ var PAGE_DATA = {
     'Nike Workout Shorts': '$40.00'
 };
 var myJSON = JSON.stringify(PAGE_DATA);
-// window.location = 'demo_json.php?x=' + myJSON;
 
-function user_sells_item() {}
+function user_sells_item() {
+    PAGE_DATA - item.add_to_shopping_cart();
+}
 
 function user_item_in_inv() {}
 
-function purchase() {}
+function purchase() {
+    PAGE_DATA.add_to_shopping_cart();
+}
 
 function add_to_shopping_cart() {}
 

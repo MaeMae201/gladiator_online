@@ -5,4 +5,3 @@
 -User then either adds item to inventory and shows in the inventory, or chooses an item
 to purchase.
 -User should have the ability to buy or sell an item.
-
