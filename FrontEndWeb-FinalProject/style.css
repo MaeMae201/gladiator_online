@@ -8,6 +8,7 @@ h1 {
     background-color: white;
     font-family: 'Spectral SC', serif;
     border-radius: 2em;
+    font-size: 2.3em;
 }
 
 h2 {
@@ -23,12 +24,11 @@ p {
 
 .sell {
     text-align: center;
-    /* float: right; */
+    float: right;
 }
 
 .container {
     float: right;
-    /* fill-opacity: left; */
 }
 
 .container2 {
@@ -49,5 +49,4 @@ p {
 
 .container6 {
     float: center;
-    fill-opacity: right;
 }

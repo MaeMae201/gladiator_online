@@ -7,13 +7,17 @@ var PAGE_DATA = {
 var myJSON = JSON.stringify(PAGE_DATA);
 // window.location = 'demo_json.php?x=' + myJSON;
 
-function add_item() {}
+function user_sells_item() {}
 
-function add_to_inventory() {}
+function user_item_in_inv() {}
 
 function purchase() {}
 
 function add_to_shopping_cart() {}
+
+function Button() {}
+
+function remove_once_bought() {}
 
 function main() {
     $('#game-over').html(
