@@ -12,22 +12,26 @@
     <script src="https://use.fontawesome.com/9b4d2790fd.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
 </head>
 
+<script>
+    document.write(Date());
+</script>
 
 <body>
-    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-
+    <div class="shopping-cart">
+        <a class="fa fa-shopping-cart" aria-hidden="true"> Shopping Cart</a>
+    </div>
     <div class="sell">
         <i class="sell" aria-hidden="true">
+            <button>Sell Items</button>
         </i>
-        Sell</a>
     </div>
     <center>
-        <h1>Welcome to Buy & Sell Nike Clothing
+        <h1>!Welcome to Buy & Sell Nike Clothing!
             <i class="fa fa-globe" aria-hidden="true"></i>
         </h1>
-        <img src="logo.jpg" width="400" height="400">
         <h3 id="game-over"></h3>
 
         <div class="container">
@@ -39,23 +43,19 @@
                 <p>Nike Shoes ($70.00)</p>
                 <img src="shoes.jpg" width="200" height="200">
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
+
         </div>
 
         <div class="container2">
-            <h2>Shirts</h2>
+            <h2>Shirt</h2>
             <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#mymodal">Buy Item</button>
 
             <h4 class="modal-title"></h4>
-            <div class="modal-body">
-                <p>Nike Shirts ($30.00)</p>
+            <div class="modal-body2">
+                <p>Nike Shirt ($30.00)</p>
                 <img src="shirts.jpg" width="200" height="200">
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
+
         </div>
 
         <div class="container3">
@@ -63,13 +63,11 @@
             <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#mymodal">Buy Item</button>
 
             <h4 class="modal-title"></h4>
-            <div class="modal-body">
+            <div class="modal-body3">
                 <p>Nike Shorts ($40.00)</p>
                 <img src="shorts.jpg" width="200" height="200">
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
+
         </div>
 
         <div class="container4">
@@ -77,19 +75,39 @@
             <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Buy Item</button>
 
             <h4 class="modal-title"></h4>
-            <div class="modal-body">
+            <div class="modal-body4">
                 <p>Nike Socks ($20.00)</p>
                 <img src="socks.jpg" width="200" height="200">
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+
+
+        <div class="container5">
+            <h2>Sweat-Suit</h2>
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Buy Item</button>
+
+            <h4 class="modal-title"></h4>
+            <div class="modal-body">
+                <p>Nike Sweat-Suit ($60.00)</p>
+                <img src="sweatsuit.jpg" width="200" height="200">
             </div>
         </div>
 
-    </center>
-    <script src="vendor/jquery.js"></script>
-    <script src="vendor/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
-    <script src="index.js"></script>
+        <div class="container6">
+            <h2>Headband</h2>
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Buy Item</button>
+
+            <h4 class="modal-title"></h4>
+            <div class="modal-body">
+                <p>Nike Headbands ($10.00)</p>
+                <img src="headband.jpg" width="200" height="200">
+            </div>
+        </div>
+
+
+        <script src="vendor/jquery.js"></script>
+        <script src="vendor/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+        <script src="index.js"></script>
 </body>
 
 </html>

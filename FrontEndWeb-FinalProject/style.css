@@ -1,3 +1,53 @@
 body {
-    background-color: navajowhite;
+    background-color: antiquewhite;
+}
+
+h1 {
+    background: padding-box;
+    padding: 5em;
+    background-color: white;
+    font-family: 'Spectral SC', serif;
+    border-radius: 2em;
+}
+
+h2 {
+    font-family: 'Spectral SC', serif;
+}
+
+p {
+    font-family: 'Spectral SC', serif;
+}
+.shopping-cart {
+    float: right;
+}
+
+.sell {
+    text-align: center;
+    /* float: right; */
+}
+
+.container {
+    float: right;
+    /* fill-opacity: left; */
+}
+
+.container2 {
+    float: left;
+}
+
+.container3 {
+    float: center;
+}
+
+.container4 {
+    float: right;
+}
+
+.container5 {
+    float: left;
+}
+
+.container6 {
+    float: center;
+    fill-opacity: right;
 }
