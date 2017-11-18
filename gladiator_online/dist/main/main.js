@@ -79,11 +79,6 @@
             // shim for using process in browser
             var process = (module.exports = {});
 
-            // cached from whatever global is present so that test runners that stub it
-            // don't break things.  But we need to wrap it in a try catch in case it is
-            // wrapped in strict mode code which doesn't define any globals.  It's inside a
-            // function because try/catches deoptimize in certain engines.
-
             var cachedSetTimeout;
             var cachedClearTimeout;
 
@@ -584,9 +579,6 @@
                     return str;
                 };
 
-                // Mark that a method should not be used.
-                // Returns a modified function which warns once by default.
-                // If --no-deprecation is set, then it is a no-op.
                 exports.deprecate = function(fn, msg) {
                     // Allow for deprecating things in the process of starting up.
                     if (isUndefined(global.process)) {
